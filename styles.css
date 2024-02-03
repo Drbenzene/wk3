@@ -1,0 +1,172 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#header1{
+    /* background-color: black; */
+}
+
+.container {
+    width: 100%;
+    /* padding: 0px 30px; */
+}
+
+.hero{
+    background-image: url('/assets/images/hero.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+#bonsharelogo{
+    padding:  20px 30px;
+}
+
+.hero-container{
+    display: flex;
+    justify-content: space-evenly
+}
+
+#hero-action-text{
+    font-size: 3.5rem;
+    color:white;
+    font-weight: 600;
+}
+
+.hero-main{
+    color: white;
+    flex: 1;
+   padding: 0px 5rem;
+    align-items: center;
+}
+
+.hero-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#sub-img-1{
+    top:150px;
+    position: absolute;
+    left: 70px
+}
+
+#sub-img-2{
+    bottom:110px;
+    position: absolute;
+    left: 80px
+}
+
+#sub-img-3{
+    position: absolute;
+    right:  70px;
+}
+
+#sub-img-4{
+    position: absolute;
+    bottom: 250px;
+    right: 70px;
+}
+
+.travel-container{
+    display: flex;
+    justify-content: center;
+    /* height: 633px; */
+    width: 100%;
+}
+
+.travel-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.travel-content{
+    display:  flex;
+    flex: 1;
+    justify-content: center;    
+    flex-direction: column;
+    justify-content: center ;
+}
+
+.travel-deal{
+    display: flex; 
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+}
+
+.travel-deal h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+.travel-deal p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+@media (max-width: 560px) {
+    .hero-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-main{
+        padding: 0px 20px;
+        margin-bottom: 2rem;
+    }
+    #hero-action-text{
+        font-size: 1.5rem;
+        color:white
+    }
+
+    #main-sub-text{
+    font-size: 12px;
+    }
+
+    .hero-img{
+        width: 100%;
+    }
+
+    .travel-container{
+        flex-direction: column;
+    }
+
+    .travel-img{
+        width: 100%;
+    }
+
+.travel-deal h3{
+    font-size: 18px;
+}
+
+.travel-deal p{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.travel-content{
+    padding: 0px 20px;  
+}
+}
+
+
+@media (max-width: 380px) {
+    .travel-container{
+margin-top: 7rem;
+    }
+}
